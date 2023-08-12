@@ -11,8 +11,8 @@ int main(){
     int sum[n+1];
     int beginId = 0;
     int smallestLenght = n +1 ;
-    unordered_map<int,int> mp;
 
+    unordered_map<int,int> mp;
 
     sum[0] = 0 ;
 
@@ -21,8 +21,8 @@ int main(){
         cin >> arr[i];
         sum[i] = sum[i-1] + arr[i];
     }
-
     // Find If Sum Array Has (Sum[i] - k)
+
     ff(i,1,n,1){
 
         int check = sum[i] - k;
